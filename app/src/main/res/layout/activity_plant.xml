@@ -1,0 +1,49 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/plantInfo_plantImage"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:padding="8dp"
+        android:src="@drawable/shrubs" />
+
+    <TextView
+        android:id="@+id/plantInfo_plantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantInfo_plantImage"
+        android:layout_marginTop="10dp"
+        android:text="Plant Name"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/plantInfo_SciName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantInfo_plantName"
+        android:text="Plant Scientific Name"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/plantInfo_plantDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plantInfo_SciName"
+        android:layout_marginTop="8dp"
+        android:text="Plant Information"
+        android:textSize="16dp"
+        android:padding="8dp" />
+
+</LinearLayout>
